@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royalprimeur</title>
+</head>
+<body>
+    <section class="baniere" id="baniere">
+        <div class="logo">
+            <img src="file:///C:/Users/yassi/Downloads/I_will-removebg-preview.png" alt="">
+        </div>
+        <div class="baniere-text">
+            <h1>Royal Primeur </h1>
+            <p>magasin de fruit et lègume .</p>
+        </div>
+        <div class="baniere_btn">
+            <a href="#"> <span></span> Savoir Plus</a>
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#baniere">Accueil</a></li>
+                <li><a href="#temoignage">Avis</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn-menu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+    </div>
+
+    <section class="temoignge" id="temoignage">
+        <div class="titre-text">
+            <h1>Que Disent nos clients?</h1>
+        </div>
+        <div class="temoignagee-boite">
+            <div class="temoignage-simple">
+                <div class="utilisateur">
+                    <img src="/image/u1.jpg" alt="">
+                    <div class="info_util">
+                        <h4>machi julie</h4>
+
+                    </div>
+                </div>
+                <p>Étant nouveaux habitants du quartier j’ai voulu « tester » ce petit primeur.
+                    Accueil fort sympathique, fruits et légumes de qualité à des prix très abordables.
+                    Dépôt de pain semoule trop trop bon!
+                    Quel bonheur d’avoir ce commerce presque en face de la maison!
+                    Je recommande les yeux fermés</p>
+            </div>
+            <div class="temoignage-simple">
+                <div class="utilisateur">
+                    <img src="/image/u2.jpg" alt="">
+                    <div class="info_util">
+                        <h4>Ahmed Sardahi</h4>
+                        <small>@franckduboi</small>
+                        <div class=>
+                            <i class=></i>
+                            <i class=></i>
+                            <i class=></i>
+                        </div>
+                    </div>
+                </div>
+                <p>On passant devant nous nous y sommes arrêtés. Très bon accueil et souriant. Les fruits et légumes semblaient frais. Les tarifs intéressants qui donnent envie de tout acheter.</p>
+            </div>
+            <div class="temoignage-simple">
+                <div class="utilisateur">
+                    <img src="/image/u3.jpg" alt="">
+                    <div class="info_util">
+                        <h4>Pierre Duminil</h4>
+                        <small></small>
+                        <div class=>
+                            <i class=></i>
+                            <i class=></i>
+                            <i class=></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Depuis longtemps je suis passé devant sans m'arrêter, c'est chose faite ce dimanche matin.
+                    Un super accueil, un très large choix de fruits et légumes de très bonne qualité et bien moins chers qu'ailleurs !
+                    J'y retournerai avec grand plaisir !</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Contact" id="contact">
+        <img src="./image/BGre.png" alt="" class="img-footer">
+        <div class="titre-text">
+            <h1>Nous contacter</h1>
+        </div>
+        <div class="pied-page">
+            <div class="pied-g">
+                <h1>Heures d'Ouverture</h1>
+                <p><i class="far fa-clock"></i>Lundi au dimanche - 9h30 a 20h30</p>
+            </div>
+            <div class="pied-d">
+                <h1>Nous contactez</h1>
+                <p>224 Av. de Lodeve, 34080 Montpellier<i class="fas fa-map-marker"></i></p>
+                <p>elyakhlifi79@gmail.com<i class="far fa-envelope"></i></p>
+                <p>0767385315<i class="fas fa-mobile"></i></p>
+            </div>
+        </div>
+            <p>Copyright Royal Primeur</p>
+        </div>
+    </section>
+    <script>
+
+        document.querySelector('.fa-times').style.display ="none"
+
+        const menuBtn = document.querySelector(".btn-menu")
+        const Sibebar = document.querySelector(".sidebar")
+
+        menuBtn.onclick = function(){
+
+            if(Sibebar.style.right == "-250px"){
+                Sibebar.style.right = "0"
+                document.querySelector('.fa-times').style.display =""
+                document.querySelector('.fa-bars').style.display ="none"
+
+            }else{
+                Sibebar.style.right = "-250px"
+                document.querySelector('.fa-times').style.display ="none"
+                document.querySelector('.fa-bars').style.display =""
+            }
+
+        }
+
+    </script>
+</body>
+</html>
